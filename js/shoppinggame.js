@@ -10,7 +10,7 @@ let player = {
     score,
     items,
 
-    getCurrentScore: function () {
+    getCurrentScore: () => {
         return this.score
     },
 
