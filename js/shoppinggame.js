@@ -1,7 +1,7 @@
 let gameComplete = false;
 // Define the three constants here
 
-const name = "unkown"
+const name = unkown
 const score = 0
 const items = 0
 
