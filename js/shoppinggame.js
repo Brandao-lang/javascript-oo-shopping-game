@@ -332,8 +332,8 @@ const shop = (prodList, tBill, lastProd) => {
     let productDetails = product.getDetails()
 
     rl.question(`You can buy - ${productDetails}.\n Do you want to buy this item <Y/N>? `.yellow, function (option) {
-        const regexYes = null; // Use the RegExp built-in object type here as appropriate
-        const regexNo = null; // Use the RegExp built-in object type here as appropriate
+        const regexYes = new RegExp('y', 'i')
+        const regexNo = new RegExp('n', 'i')
         if (regexYes.test(option)) {
             totalBill = calculateBill(product, totalBill);
             calculatePoints(product, totalBill);
