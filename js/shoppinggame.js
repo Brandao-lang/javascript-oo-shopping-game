@@ -82,7 +82,7 @@ const loadProducts = (map, prodId) => {
     try {
         // Call Object.keys() to load the property names of the Product object in to prodKeys array here
         let prodKeys = [];
-        let prodKeys = Object.keys(new Product());
+        prodKeys = Object.keys(new Product());
 
         let iterator_obj = map.entries();
 
@@ -221,12 +221,12 @@ function loadMasterData() {
 
 // Complete this function
 const findProductById = (id) => { 
-    // return (product) => {
-    //     if (id === product.id) {
-    //         return true
-    //     }
-    //     return false
-    // }
+    return (product) => {
+        if (id === product.id) {
+            return true
+        }
+        return false
+    }
 };
 
 // Complete this function
