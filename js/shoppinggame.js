@@ -244,8 +244,8 @@ const getProduct = (prodList, pId) => {
 
 // Complete this function
 const calculateBill = (prod, tBill) => {
-    let total = tBill + prod.price
-    return total
+    tBill += prod.price
+    return tBill
  };
 
 const findPointsToBill = (roundedTotal) => {
