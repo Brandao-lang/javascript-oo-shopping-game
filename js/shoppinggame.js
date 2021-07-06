@@ -327,11 +327,7 @@ const shop = (prodList, tBill, lastProd) => {
     let totalBill = tBill;
     const prId = generateProductId();
     
-    if (!Object.is(lastProd, undefined)) {
-        let product = lastProd
-    } else {
-        let product = getProduct()
-    }
+    let product = !Object.is(lastProd, undefined) ? lastProd : getProduct(prodList, prId);
         
     
     let productDetails = null; // Assign the value of productDetails here
