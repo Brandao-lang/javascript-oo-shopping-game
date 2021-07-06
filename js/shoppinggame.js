@@ -380,7 +380,8 @@ const rateAndExit = () => {
             playerRating.rating = r
 
             // Call Object.assign() method here to populate target
-            
+            let target= Object.assign({}, player, playerRating);
+
 
             console.log(`${target.name} you rated this game as ${target.rate}`.green);
             console.log("Thank you for your valuable feedback.".blue);
