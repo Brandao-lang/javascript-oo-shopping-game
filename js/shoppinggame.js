@@ -23,10 +23,10 @@ let player = {
 
 class Product  {
     constructor(id, name, price, expiryDate) {
-        this.id,
-        this.name,
-        this.price,
-        this.expiryDate
+        this.id = id,
+        this.name = name,
+        this.price = price,
+        this.expiryDate = expiryDate
     }
 }
 
