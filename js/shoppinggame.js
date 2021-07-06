@@ -21,13 +21,12 @@ let player = {
     }
 }
 
-function Product (id, name, price, expiryDate) {
-        this.id = id,
-        this.name = name,
-        this.price = price,
-        this.expiryDate = expiryDate
-    }
-
+function Product(id, name, price, expiryDate) {
+    this.id = id;
+    this.name = name;
+    this.price = price;
+    this.expiryDate = expiryDate;
+}
 
 // Complete the dateDiff function
 const dateDiff = (date1, date2) => { };
